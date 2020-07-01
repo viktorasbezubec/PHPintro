@@ -2,7 +2,7 @@
 $servername = "app_mysql";
 $dbusername = "root";
 $dbpassword = "root";
-$dbName = "login";
+$dbName = "loging";
 
 
 try {
@@ -13,3 +13,17 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
+
+//$servername = "app_mysql";
+//$dbusername = "root";
+//$dbpassword = "root";
+//$dbName = "login";
+//
+//$conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbName);
+//
+//if(!$conn){
+//    die();
+//    }else {
+//    echo "jega";
+//}
+//

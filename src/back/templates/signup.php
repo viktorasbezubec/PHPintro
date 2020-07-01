@@ -9,6 +9,12 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php
+//if($_SERVER['REQUEST_METHOD'] == 'POST'){
+//    require ('../includes/signuplogic.php');
+//}
+?>
 <div class="hero">
     <div class="whitebox">
         <div class="button-box">
@@ -17,9 +23,9 @@
             <button type="button" class="push-btn">Log In</button>
 
         </div>
-        <form id="login" class="input-group" action="../../public/index.php">
-            <input type="text" class="input-field" placeholder="Enter Username">
-            <input type="text" class="input-field" placeholder="Enter Password">
+        <form id="login" class="input-group" action="index.php">
+            <input type="text" class="input-field"  name="uid" placeholder="Enter Username">
+            <input type="text" class="input-field"  name="pwd" placeholder="Enter Password">
             <input type="checkbox" class="check-box"><span>Remember Password</span>
             <button type="submit" class="submit-btn">Log in</button>
         </form>
