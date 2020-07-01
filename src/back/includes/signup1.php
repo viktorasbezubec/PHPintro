@@ -2,6 +2,7 @@
 if(isset($_POST['signup-submit'])){
     require 'db.php';
 
+
     $username = $_POST['uid'];
     $email = $_POST['mail'];
     $password = $_POST['pwd'];
@@ -12,5 +13,4 @@ if(isset($_POST['signup-submit'])){
     exit();
 
     }
-
 }
