@@ -2,7 +2,7 @@
 require '../back/templates/signup.php'
 ?>
 <?php
-require '../back/includes/signup1.php'
+require '../back/includes/signuplogic.php'
 ?>
 
 
