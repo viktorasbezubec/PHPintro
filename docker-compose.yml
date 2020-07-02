@@ -20,6 +20,7 @@ services:
       - mysql
     volumes:
       - './src:/home/project/src'
+      - './conf.d/php.ini:/etc/php/7.4/fpm/php.ini:ro'
     environment:
       NFQ_PROJECT_ROOT: '/home/project/src'
       NFQ_ENABLE_PHP_MODULES: 'mysqlnd curl json pdo pdo_mysql ctype tokenizer simplexml intl mbstring xml zip iconv dom bcmath fileinfo xdebug xmlwriter gd xmlreader'
@@ -32,6 +33,7 @@ services:
       - '22:22'
     volumes:
       - './src:/home/project/src'
+      - './conf.d/php.ini:/etc/php/7.4/cli/php.ini:ro'
     environment:
       NFQ_ENABLE_PHP_MODULES: 'mysqlnd curl json pdo pdo_mysql ctype tokenizer simplexml intl mbstring xml zip iconv dom bcmath fileinfo xdebug xmlwriter gd xmlreader'
       NFQ_PROJECT_ROOT: "/home/project/src"
